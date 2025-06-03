@@ -6,7 +6,7 @@ import BootUp from './BootUp.jsx'
 import App from './App.jsx'
 import Desktop from './Desktop.jsx'
 import Work from './Work.jsx'
-import Projects from './Project.jsx'
+import Project from './Project.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/terminal" element={<App />} />
         <Route path="/desktop" element={<Desktop />} />
         <Route path="/work" element={<Work />} />
-        <Route path='/projects' element={<Projects />} />
+        <Route path='/projects' element={<Project />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

@@ -1,7 +1,14 @@
 import Taskbar from './Taskbar';
+import Kotlin from './assets/tech/Kotlin.png';
+import Swift from './assets/tech/Swift.png';
+import PostgreSQL from './assets/tech/PostgreSQL.png';
+import React from './assets/tech/React.png';
+import Docker from './assets/tech/Docker.png';
+import JavaScript from './assets/tech/JavaScript.png';
+import HTML from './assets/tech/HTML.png';
+import CSS from './assets/tech/CSS.png';
 
-function Projects() {
-
+function Project() {
   const projects = [
     {
       title: 'Universal Fitness',
@@ -13,7 +20,6 @@ function Projects() {
         'Designed and deployed a modular, scalable architecture with shared Compose UI code and platform-specific logic for Android (tested) and potential iOS compatibility.',
       ],
       icon: '🏋️',
-      link: '#',
     },
     {
       title: 'AniFinder',
@@ -25,19 +31,16 @@ function Projects() {
         'Google Custom Search API used to fetch an image related to the returned show.',
       ],
       icon: '📺',
-      link: '#',
+      link: 'https://anifinder.peternguyen.me/',
     },
   ];
 
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-purple-900 to-purple-700 flex flex-col items-center p-4 overflow-auto" style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.1) 1%, transparent 1%)', backgroundSize: '20px 20px' }}>
-      {/* header */}
+    <div className="fixed inset-0 bg-gradient-to-br flex flex-col items-center p-4 overflow-auto" style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.1) 1%, transparent 1%)', backgroundSize: '20px 20px' }}>
       <div className="w-full max-w-4xl text-center mb-8">
         <h1 className="text-4xl font-bold text-white mb-2">My Projects</h1>
-        <p className="text-lg text-gray-300">A showcase of my technical endeavors</p>
       </div>
 
-      {/* project Cards */}
       <div className="w-full max-w-4xl flex flex-col gap-6">
         {projects.map((project, index) => (
           <div
@@ -54,25 +57,31 @@ function Projects() {
                 <p key={i} className="text-gray-300 mb-1">• {desc}</p>
               ))}
             </div>
-            <div className="flex flex-wrap gap-2 mb-4">
-              {project.technologies.map((tech, i) => (
-                <span
-                  key={i}
-                  className="inline-block bg-purple-600 text-white text-xs px-2 py-1 rounded-full"
-                >
-                  {tech}
-                </span>
-              ))}
+            <div className="flex flex-wrap gap-3 mb-4">
+              {project.technologies.map((tech, i) => {
+                const techImages = { Kotlin, Swift, PostgreSQL, React, Docker, JavaScript, HTML, CSS };
+                const image = techImages[tech];
+                return image ? (
+                  <img
+                    key={i}
+                    src={image}
+                    alt={`${tech} logo`}
+                    className="inline-block w-8 h-8 object-contain rounded bg-opacity-30 border-2 border-blue-500 border-opacity-50 hover:scale-110 hover:shadow-md transition-all duration-300"
+                  />
+                ) : null;
+              })}
             </div>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute bottom-4 right-4 text-green-400 hover:text-green-300 transition-colors"
-              aria-label={`Link to ${project.title} project`}
-            >
-              🔗
-            </a>
+            {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bottom-4 right-4 text-green-400 hover:text-green-300 transition-colors"
+                aria-label={`Link to ${project.title} project`}
+              >
+                🔗
+              </a>
+            )}
           </div>
         ))}
       </div>
@@ -82,4 +91,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Project;
