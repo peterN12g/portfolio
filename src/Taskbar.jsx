@@ -1,8 +1,9 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function Taskbar({ buttonText = 'Back to Desktop', onButtonClick }) {
   const navigate = useNavigate();
+  const location = useLocation();
   const [currentTime, setCurrentTime] = useState('');
   const [showColon, setShowColon] = useState(true);
   const [showCalendar, setShowCalendar] = useState(false);
@@ -23,7 +24,7 @@ function Taskbar({ buttonText = 'Back to Desktop', onButtonClick }) {
 
   const updateTime = () => {
     const now = new Date();
-    const offset = -5;
+    const offset = -5; 
     const utc = now.getTime() + now.getTimezoneOffset() * 60000;
     const centralTime = new Date(utc + 3600000 * offset);
 
@@ -108,15 +109,21 @@ function Taskbar({ buttonText = 'Back to Desktop', onButtonClick }) {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [showCalendar]);
 
+  const isDesktopPage = location.pathname === '/desktop';
+
   return (
     <>
       <div className="w-full bg-gray-800 bg-opacity-70 p-2 rounded-t-lg flex justify-between items-center mt-8">
-        <button
-          className="text-white text-sm bg-blue-600 px-3 py-1 rounded hover:bg-blue-700 transition-colors"
-          onClick={handleClick}
-        >
-          {buttonText}
-        </button>
+        <div>
+          {!isDesktopPage && (
+            <button
+              className="text-white text-sm bg-blue-600 px-3 py-1 rounded hover:bg-blue-700 transition-colors"
+              onClick={handleClick}
+            >
+              {buttonText}
+            </button>
+          )}
+        </div>
         <div className="flex items-center space-x-2">
           <div className="text-white text-sm">
             {currentTime.split(':').map((part, index) => (
