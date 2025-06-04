@@ -95,3 +95,42 @@ button:focus-visible {
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
+
+.shutdown-screen {
+  background-color: #000;
+  color: #f00;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100vw;
+}
+
+.shutdown-terminal {
+  padding: 20px;
+  border: 2px solid #f00;
+  border-radius: 5px;
+  background-color: #000;
+  box-shadow: 0 0 10px #f00;
+  text-align: center;
+}
+
+.shutdown-status {
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.reboot-button {
+  padding: 10px 20px;
+  background-color: #f00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.reboot-button:hover {
+  background-color: #c00;
+}

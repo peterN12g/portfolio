@@ -8,6 +8,7 @@ import Desktop from './Desktop.jsx'
 import Work from './Work.jsx'
 import Project from './Project.jsx'
 import AboutMe from './AboutMe.jsx'
+import Shutdown from './Shutdown.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/work" element={<Work />} />
         <Route path='/projects' element={<Project />} />
         <Route path='/about' element={<AboutMe />} />
+        <Route path='/shutdown' element={<Shutdown />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

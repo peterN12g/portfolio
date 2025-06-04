@@ -3,7 +3,7 @@ import Taskbar from './Taskbar';
 function Work() {
   const workExperiences = [
     {
-      title: 'Full Stack Developer',
+      title: 'Full Stack Developer Intern',
       company: 'BrBytes',
       website: 'https://www.brbytes.org',
       period: 'May 2024 - Present',

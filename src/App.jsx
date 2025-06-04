@@ -11,11 +11,13 @@ function App() {
       const command = input.trim().toLowerCase();
       let newOutput = [...output];
       if (command === 'help') {
-        newOutput.push('Available commands: start, clear');
+        newOutput.push('Available commands:\n start: access GUI\n clear: clear the terminal\n shutdown: shutdown the site');
       } else if (command === 'clear') {
         newOutput = [];
       } else if (command === 'start') {
         navigate('/desktop');
+      } else if (command === 'shutdown') {
+        navigate('/shutdown');
       } else if (command) {
         newOutput.push(`Command not recognized: ${command}`);
       }
@@ -59,7 +61,7 @@ function App() {
           ))}
         </div>
         {output.map((line, index) => (
-          <div key={index} className="mb-2 whitespace-nowrap">~$ {line}</div>
+          <div key={index} className="mb-2 whitespace-pre">~$ {line}</div>
         ))}
         <div className="relative mb-2">
           <div ref={inputContainerRef} className="whitespace-nowrap overflow-x-auto scrollbar-hidden">
