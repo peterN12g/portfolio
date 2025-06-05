@@ -140,3 +140,26 @@ button:focus-visible {
     background-color: #242424;
   }
 }
+
+@media (max-width: 640px) {
+  .sm\:max-w-md { max-width: 20rem !important; }
+  .sm\:text-3xl { font-size: 1.875rem !important; }
+  .sm\:text-xl { font-size: 1.25rem !important; }
+  .sm\:text-base { font-size: 1rem !important; }
+  .sm\:text-sm { font-size: 0.875rem !important; }
+  .sm\:text-xs { font-size: 0.75rem !important; }
+  .sm\:p-4 { padding: 1rem !important; }
+  .sm\:p-1 { padding: 0.25rem !important; }
+  .sm\:gap-2 { gap: 0.5rem !important; }
+  .sm\:w-5, .sm\:h-5 { width: 1.25rem !important; height: 1.25rem !important; }
+}
+@media (max-width: 768px) {
+  .md\:max-w-4xl { max-width: 28rem !important; }
+  .md\:text-4xl { font-size: 2.25rem !important; }
+  .md\:text-lg { font-size: 1.125rem !important; }
+  .md\:text-base { font-size: 1rem !important; }
+  .md\:p-6 { padding: 1.5rem !important; }
+  .md\:p-2 { padding: 0.5rem !important; }
+  .md\:gap-4 { gap: 1rem !important; }
+  .md\:w-6, .md\:h-6 { width: 1.5rem !important; height: 1.5rem !important; }
+}

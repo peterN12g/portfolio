@@ -1,21 +1,20 @@
 import Taskbar from './Taskbar';
-import JavaIcon from './assets/tech/Java.png'
-import JavaScriptIcon from './assets/tech/JavaScript.png'
-import PythonIcon from './assets/tech/Python.png'
-import HTMLIcon from './assets/tech/HTML.png'
-import CSSIcon from './assets/tech/CSS.png'
-import CIcon from './assets/tech/C.png'
-import SQLIcon from './assets/tech/SQL.png'
-import KotlinIcon from './assets/tech/Kotlin.png'
-import GitIcon from './assets/tech/Git.png'
-import SvelteIcon from './assets/tech/Svelte.png'
-import GitHubIcon from './assets/tech/Github.png'
-import SwiftIcon from './assets/tech/Swift.png'
-import NodeJSIcon from './assets/tech/NodeJS.png'
-import ReactIcon from './assets/tech/React.png'
-import AWSIcon from './assets/tech/AWS.png'
-import DockerIcon from './assets/tech/Docker.png'
-
+import JavaIcon from './assets/tech/Java.png';
+import JavaScriptIcon from './assets/tech/JavaScript.png';
+import PythonIcon from './assets/tech/Python.png';
+import HTMLIcon from './assets/tech/HTML.png';
+import CSSIcon from './assets/tech/CSS.png';
+import CIcon from './assets/tech/C.png';
+import SQLIcon from './assets/tech/SQL.png';
+import KotlinIcon from './assets/tech/Kotlin.png';
+import GitIcon from './assets/tech/Git.png';
+import SvelteIcon from './assets/tech/Svelte.png';
+import GitHubIcon from './assets/tech/Github.png';
+import SwiftIcon from './assets/tech/Swift.png';
+import NodeJSIcon from './assets/tech/NodeJS.png';
+import ReactIcon from './assets/tech/React.png';
+import AWSIcon from './assets/tech/AWS.png';
+import DockerIcon from './assets/tech/Docker.png';
 
 function AboutMe() {
   const skills = [
@@ -38,27 +37,27 @@ function AboutMe() {
   ];
 
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-purple-900 to-purple-700 flex flex-col items-center p-4 overflow-auto" style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.1) 1%, transparent 1%)', backgroundSize: '20px 20px' }}>
+    <div className="fixed inset-0 bg-gradient-to-br from-purple-900 to-purple-700 flex flex-col items-center p-4 overflow-auto overflow-x-hidden" style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.1) 1%, transparent 1%)', backgroundSize: '20px 20px' }}>
       {/* header */}
       <div className="w-full max-w-4xl text-center mb-8">
-        <h1 className="text-4xl font-bold text-white mb-2">About Me</h1>
-        <p className="text-lg text-gray-300">Get to know the developer behind the code</p>
+        <h1 className="text-4xl font-bold text-white mb-2 md:text-4xl sm:text-3xl">About Me</h1>
+        <p className="text-lg text-gray-300 md:text-lg sm:text-base">Get to know the developer behind the code</p>
       </div>
 
       {/* introduction */}
       <div className="w-full max-w-4xl mb-8">
-        <div className="p-6 rounded-lg bg-gray-800 bg-opacity-70 text-white shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(0,255,0,0.5)]">
-          <h2 className="text-2xl font-semibold mb-4">Who Am I?</h2>
-          <p className="text-gray-300">
+        <div className="p-6 rounded-lg bg-gray-800 bg-opacity-70 text-white shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(0,255,0,0.5)] md:p-6 sm:p-4">
+          <h2 className="text-2xl font-semibold mb-4 md:text-2xl sm:text-xl">Who Am I?</h2>
+          <p className="text-gray-300 md:text-base sm:text-sm">
             I’m a passionate full-stack developer with a knack for building innovative web and mobile applications. With a foundation in computer science and hands-on experience in Agile environments, I thrive on solving complex problems using modern technologies. My journey includes creating cross-platform apps, optimizing cloud infrastructure, and exploring AI-driven solutions. When I’m not coding, you’ll find me exploring new tech trends or enjoying a good sci-fi movies.
           </p>
         </div>
       </div>
 
       {/* skills */}
-      <div className="w-full max-w-4xl">
-        <div className="p-6 rounded-lg bg-gray-800 bg-opacity-70 text-white shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(0,255,0,0.5)]">
-          <h2 className="text-2xl font-semibold mb-6 text-center">My Skills</h2>
+      <div className="w-full max-w-4xl md:max-w-4xl sm:max-w-md">
+        <div className="p-6 rounded-lg bg-gray-800 bg-opacity-70 text-white shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(0,255,0,0.5)] md:p-6 sm:p-4">
+          <h2 className="text-2xl font-semibold mb-6 text-center md:text-2xl sm:text-xl">My Skills</h2>
           {(() => {
             const sortedSkills = [...skills].sort((a, b) => a.name.length - b.name.length);
             const rows = [];
@@ -70,15 +69,15 @@ function AboutMe() {
               index += count;
             }
             return rows.map((row, i) => (
-              <div key={i} className="flex justify-center gap-4 mb-3">
+              <div key={i} className="flex justify-center gap-4 mb-3 flex-wrap md:gap-4 sm:gap-2">
                 {row.map((skill, j) => (
-                  <div key={j} className="flex items-center bg-opacity-30 border-2 border-blue-500 border-opacity-50 rounded-lg p-2 hover:bg-opacity-50 transition-all duration-300 group">
+                  <div key={j} className="flex items-center bg-opacity-30 border-2 border-blue-500 border-opacity-50 rounded-lg p-2 hover:bg-opacity-50 transition-all duration-300 group md:p-2 sm:p-1">
                     <img
                       src={skill.icon}
                       alt={skill.name}
-                      className="w-6 h-6 mr-2 object-contain transition-all duration-300 group-hover:scale-125 group-hover:shadow-lg"
+                      className="w-6 h-6 mr-2 object-contain transition-all duration-300 group-hover:scale-125 group-hover:shadow-lg md:w-6 sm:w-5 md:h-6 sm:h-5"
                     />
-                    <span className="text-sm font-medium">{skill.name}</span>
+                    <span className="text-sm font-medium md:text-sm sm:text-xs">{skill.name}</span>
                   </div>
                 ))}
               </div>
@@ -86,7 +85,6 @@ function AboutMe() {
           })()}
         </div>
       </div>
-
       <Taskbar />
     </div>
   );
