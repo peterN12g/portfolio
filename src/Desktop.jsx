@@ -16,7 +16,7 @@ function Desktop() {
   };
 
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-purple-900 to-purple-700 flex flex-col items-center justify-between p-4 overflow-auto" style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.1) 1%, transparent 1%)', backgroundSize: '20px 20px' }}>
+    <div className="fixed inset-0 flex flex-col items-center justify-between p-4 overflow-auto" style={{ backgroundSize: '20px 20px' }}>
       {/* icons */}
       <div className="flex flex-wrap gap-6 justify-center w-full">
         {apps.map((app, index) => (
