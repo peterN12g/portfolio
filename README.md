@@ -1,12 +1,38 @@
-# React + Vite
+# Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a personal portfolio website showcasing my skills, work experience, and projects as a full-stack developer. Built with React and Tailwind CSS, it features a futuristic interface with responsive design for both desktop and mobile users.
 
-Currently, two official plugins are available:
+## Features
+- **Interactive Boot-Up Sequence**: Simulates a terminal boot-up with navigation to desktop or terminal pages.
+- **Desktop Interface**: Displays clickable app icons for navigating to sections like Work, Projects, and About Me.
+- **Work Experience Timeline**: Highlights professional roles with detailed descriptions.
+- **Projects Showcase**: Lists personal projects with descriptions and links.
+- **About Me Section**: Includes an introduction and a grid of technical skills.
+- **Shutdown Page**: Features a holographic shutdown sequence with reboot functionality.
+- **Mobile Optimization**: Responsive layouts for all pages, ensuring usability on smaller screens.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd <project-directory>
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open `http://localhost:3000` in your browser.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used
+- **Frontend**: React, Tailwind CSS
+- **Routing**: React Router
+- **Animations**: Typed.js, CSS Animations
+- **Assets**: Custom icons and images for skills and projects
