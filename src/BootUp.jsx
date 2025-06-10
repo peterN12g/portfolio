@@ -49,6 +49,12 @@ function BootUp() {
     }
   };
 
+  const handleContinueClick = () => {
+    if (isFinished) {
+      navigate('/terminal');
+    }
+  };
+
   useEffect(() => {
     window.addEventListener('keypress', handleKeyPress);
     return () => window.removeEventListener('keypress', handleKeyPress);
@@ -61,6 +67,14 @@ function BootUp() {
           <div key={index} className="mb-2" dangerouslySetInnerHTML={{ __html: message }} />
         ))}
         <div ref={typedRef} className="mb-2"></div>
+        {isFinished && (
+          <button
+            onClick={handleContinueClick}
+            className="sm:hidden mt-4 px-4 py-2 bg-black border border-green-500 text-green-500 rounded-sm hover:bg-green-500 hover:text-black transition-colors duration-200 shadow-[0_0_5px_rgba(0,255,0,0.3)]"
+          >
+            Continue
+          </button>
+        )}
       </div>
     </div>
   );
