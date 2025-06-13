@@ -17,7 +17,6 @@ function Desktop() {
 
   return (
     <div className="fixed inset-0 flex flex-col items-center justify-between p-4 overflow-auto" style={{ backgroundSize: '20px 20px' }}>
-      {/* icons */}
       <div className="flex flex-wrap gap-6 justify-center w-full">
         {apps.map((app, index) => (
           <div key={index} className="text-center cursor-pointer hover:scale-110 transition-transform" onClick={() => handleAppClick(app.path)}>

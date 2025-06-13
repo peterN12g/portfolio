@@ -38,13 +38,11 @@ function AboutMe() {
 
   return (
     <div className="fixed inset-0 bg-gradient-to-br from-purple-900 to-purple-700 flex flex-col items-center p-4 overflow-auto overflow-x-hidden" style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.1) 1%, transparent 1%)', backgroundSize: '20px 20px' }}>
-      {/* header */}
       <div className="w-full max-w-4xl text-center mb-8">
         <h1 className="text-4xl font-bold text-white mb-2 md:text-4xl sm:text-3xl">About Me</h1>
         <p className="text-lg text-gray-300 md:text-lg sm:text-base">Get to know the developer behind the code</p>
       </div>
 
-      {/* introduction */}
       <div className="w-full max-w-4xl mb-8">
         <div className="p-6 rounded-lg bg-gray-800 bg-opacity-70 text-white shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(0,255,0,0.5)] md:p-6 sm:p-4">
           <h2 className="text-2xl font-semibold mb-4 md:text-2xl sm:text-xl">Who Am I?</h2>
@@ -54,7 +52,6 @@ function AboutMe() {
         </div>
       </div>
 
-      {/* skills */}
       <div className="w-full max-w-4xl md:max-w-4xl sm:max-w-md">
         <div className="p-6 rounded-lg bg-gray-800 bg-opacity-70 text-white shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(0,255,0,0.5)] md:p-6 sm:p-4">
           <h2 className="text-2xl font-semibold mb-6 text-center md:text-2xl sm:text-xl">My Skills</h2>

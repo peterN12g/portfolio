@@ -39,7 +39,6 @@ function Work() {
       </div>
 
       <div className="w-full max-w-3xl relative">
-        {/* Vertical timeline (hidden on mobile) */}
         <div className="hidden sm:block border-l-4 border-green-500 absolute h-full left-1/2 transform -translate-x-1/2"></div>
 
         {workExperiences.map((exp, index) => (
