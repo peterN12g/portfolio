@@ -11,10 +11,7 @@ function Taskbar({ buttonText = 'Back to Desktop', onButtonClick }) {
   const [calendarYear, setCalendarYear] = useState(new Date().getFullYear());
   const [selectedDate, setSelectedDate] = useState(null);
 
-  const monthNames = [
-    'January', 'February', 'March', 'April', 'May', 'June',
-    'July', 'August', 'September', 'October', 'November', 'December',
-  ];
+  const monthNames = [ 'January', 'February', 'March', 'April', 'May', 'June','July', 'August', 'September', 'October', 'November', 'December' ];
 
   const today = {
     date: new Date().getDate(),
@@ -113,7 +110,7 @@ function Taskbar({ buttonText = 'Back to Desktop', onButtonClick }) {
 
   return (
     <>
-      <div className="w-full bg-gray-800 bg-opacity-70 p-2 rounded-t-lg flex justify-between items-center mt-8">
+      <div className="fixed bottom-0 left-0 w-full z-50 bg-gray-800 bg-opacity-70 p-2 flex justify-between items-center">
         <div>
           {!isDesktopPage && (
             <button
