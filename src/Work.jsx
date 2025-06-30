@@ -23,14 +23,7 @@ function Work() {
   ];
 
   return (
-    <div
-      className="fixed inset-0 bg-gradient-to-br from-purple-900 to-purple-700 flex flex-col items-center p-4 overflow-auto"
-      style={{
-        backgroundImage:
-          'radial-gradient(circle, rgba(255,255,255,0.1) 1%, transparent 1%)',
-        backgroundSize: '20px 20px',
-      }}
-    >
+    <div className="fixed inset-0 bg-gradient-to-br from-purple-900 to-purple-700 flex flex-col items-center p-4 overflow-auto pb-[100px]" style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.1) 1%, transparent 1%)', backgroundSize: '20px 20px',}}>
       <div className="w-full max-w-3xl text-center mb-8">
         <h1 className="text-4xl font-bold text-white mb-2">Work Experience</h1>
         <p className="text-lg text-gray-300">

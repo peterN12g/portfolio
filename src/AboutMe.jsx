@@ -37,7 +37,7 @@ function AboutMe() {
   ];
 
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-purple-900 to-purple-700 flex flex-col items-center p-4 overflow-auto overflow-x-hidden" style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.1) 1%, transparent 1%)', backgroundSize: '20px 20px' }}>
+    <div className="fixed inset-0 bg-gradient-to-br from-purple-900 to-purple-700 flex flex-col items-center p-4 overflow-auto overflow-x-hidden pb-[100px]" style={{ backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.1) 1%, transparent 1%)', backgroundSize: '20px 20px' }}>
       <div className="w-full max-w-4xl text-center mb-8">
         <h1 className="text-4xl font-bold text-white mb-2 md:text-4xl sm:text-3xl">About Me</h1>
         <p className="text-lg text-gray-300 md:text-lg sm:text-base">Get to know the developer behind the code</p>
