@@ -29,7 +29,7 @@ This project is a personal portfolio website showcasing my skills, work experien
    ```bash
    npm run dev
    ```
-5. Open `http://localhost:3000` in your browser.
+5. Open `http://localhost:5173` in your browser.
 
 ## Technologies Used
 - **Frontend**: React, Tailwind CSS

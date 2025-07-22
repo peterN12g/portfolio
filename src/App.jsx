@@ -19,7 +19,7 @@ function App() {
       } else if (command === 'shutdown') {
         navigate('/shutdown');
       } else if (command) {
-        newOutput.push(`Command not recognized: ${command}`);
+        newOutput.push(`Command not recognized: ${command}. Type: 'help' for menu.`);
       }
       setOutput(newOutput);
       setInput('');
