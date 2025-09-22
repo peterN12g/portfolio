@@ -6,19 +6,28 @@ function Work() {
       title: 'Full Stack Developer Intern',
       company: 'BrBytes',
       website: 'https://www.brbytes.org',
-      period: 'May 2024 - Present',
+      period: 'July 2025 - Present',
       description:
-        'Full-stack development of the BRBytes homepage, teacher portal, and lesson editor. Improved UX with responsive Alpine.js components and API integrations using Postman. Redesigned backend database for scalability. Worked in a Scrum team using Agile methodologies.',
+        'Full-stack development of the BRBytes homepage, teacher portal, and lesson editor. Utilized API integrations, tested within Postman, to enhance lesson content creation and editing time. Deployed for 100+ schools. Worked in a Scrum team using Agile methodologies.',
       icon: '💻',
     },
     {
       title: 'Cloud Security Engineer Intern',
       company: 'Orca Security',
       website: 'https://orca.security',
-      period: 'June 2024 - Present',
+      period: 'June 2024 - July 2025',
       description:
-        'Contributed to cloud security operations by deploying Kubernetes clusters on AWS/GCP, integrating Jira Cloud and ServiceNow ITSM/SIR, and enhancing automated API testing with a custom differ. Investigated data mirroring and reference anomalies, reported backend bugs. Shadowed customer calls to deepen understanding of cloud security workflows and enterprise integrations.',
+        'Contributed to cloud security operations by deploying Kubernetes clusters on AWS/GCP, integrating Jira Cloud and ServiceNow ITSM/SIR, and enhancing automated API testing with a custom differ. Investigated data mirroring and reference anomalies, discovering over 50+ errors and misconfigurations within the platform. Shadowed customer calls to deepen understanding of cloud security workflows and enterprise integrations.',
       icon: '🐳',
+    },
+    {
+      title: 'Web Developer Intern',
+      company: 'BrBytes',
+      website: 'https://www.brbytes.org',
+      period: 'May 2024 - May 2025',
+      description:
+        'Web development of the BRBytes homepage and teacher portal. Improved UX and UI with responsive Alpine.js components. Worked within a Scrum teams using Agile methodologies to complete set goals in two week sprints.',
+      icon: '💻',
     },
   ];
 

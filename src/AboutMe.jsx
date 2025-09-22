@@ -47,7 +47,7 @@ function AboutMe() {
         <div className="p-6 rounded-lg bg-gray-800 bg-opacity-70 text-white shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(0,255,0,0.5)] md:p-6 sm:p-4">
           <h2 className="text-2xl font-semibold mb-4 md:text-2xl sm:text-xl">Who Am I?</h2>
           <p className="text-gray-300 md:text-base sm:text-sm">
-            I’m a passionate full-stack developer with a knack for building innovative web and mobile applications. With a foundation in computer science and hands-on experience in Agile environments, I thrive on solving complex problems using modern technologies. My journey includes creating cross-platform apps, optimizing cloud infrastructure, and exploring AI-driven solutions. When I’m not coding, you’ll find me exploring new tech trends or enjoying a good sci-fi movies.
+            I’m a passionate full-stack developer with a knack for building innovative web and mobile applications. With a foundation in computer science and hands-on experience in Agile environments, I thrive on solving complex problems using modern technologies. My journey includes creating cross-platform apps, optimizing cloud infrastructure, and exploring AI-driven solutions. When I’m not coding, you’ll find me exploring new tech trends or enjoying a good sci-fi movie.
           </p>
         </div>
       </div>
