@@ -10,11 +10,13 @@ import KotlinIcon from './assets/tech/Kotlin.png';
 import GitIcon from './assets/tech/Git.png';
 import SvelteIcon from './assets/tech/Svelte.png';
 import GitHubIcon from './assets/tech/Github.png';
+import GitHubIcon2 from './assets/tech/Github2.png';
 import SwiftIcon from './assets/tech/Swift.png';
 import NodeJSIcon from './assets/tech/NodeJS.png';
 import ReactIcon from './assets/tech/React.png';
 import AWSIcon from './assets/tech/AWS.png';
 import DockerIcon from './assets/tech/Docker.png';
+import LinkedinIcon from './assets/tech/LinkedIn.png'
 
 function AboutMe() {
   const skills = [
@@ -80,6 +82,20 @@ function AboutMe() {
               </div>
             ));
           })()}
+        </div>
+      </div>
+
+      <div className="w-full max-w-4xl md:max-w-4xl sm:max-w-md">
+        <div className="flex justify-center gap-6 mt-4">
+          {/* LinkedIn */}
+          <a href="https://www.linkedin.com/in/peter-nguyen123" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
+            <img src={LinkedinIcon} alt="LinkedIn" className="w-10 h-10 md:w-12 md:h-12"/>
+          </a>
+
+          {/* GitHub */}
+          <a href="https://github.com/petern12g" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
+            <img src={GitHubIcon2} alt="GitHub" className="w-10 h-10 md:w-12 md:h-12"/>
+          </a>
         </div>
       </div>
       <Taskbar />
