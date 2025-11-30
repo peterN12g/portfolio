@@ -1,5 +1,7 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import GitHubIcon2 from './assets/tech/Github2.png';
+import LinkedinIcon from './assets/tech/LinkedIn.png'
 
 function Taskbar({ buttonText = 'Back to Desktop', onButtonClick }) {
   const navigate = useNavigate();
@@ -121,6 +123,15 @@ function Taskbar({ buttonText = 'Back to Desktop', onButtonClick }) {
             </button>
           )}
         </div>
+        <div className='flex space-x-4'>
+          <a href='https://github.com/petern12g' target="_blank" rel='noopener noreferer'>
+            <img src={GitHubIcon2} alt="GitHub" className="w-12 h-12"/>
+          </a>
+          <a href='https://linkedin.com/in/peter-nguyen123' target='_blank' rel='noopener noreferer'>
+            <img src={LinkedinIcon} alt="LinkedIn" className="w-12 h-12"/>
+          </a>
+        </div>
+
         <div className="flex items-center space-x-2">
           <div className="text-white text-sm">
             {currentTime.split(':').map((part, index) => (
