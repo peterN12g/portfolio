@@ -7,6 +7,7 @@ import Docker from './assets/tech/Docker.png';
 import JavaScript from './assets/tech/JavaScript.png';
 import HTML from './assets/tech/HTML.png';
 import CSS from './assets/tech/CSS.png';
+import SQL from './assets/tech/SQL.png'
 
 function Project() {
   const projects = [
@@ -23,7 +24,7 @@ function Project() {
     },
     {
       title: 'AniFinder',
-      technologies: ['JavaScript', 'HTML', 'CSS'],
+      technologies: ['JavaScript', 'HTML', 'CSS', 'SQL'],
       period: 'February 2024 - May 2024',
       description: [
         'Show generator powered by Google’s Gemini AI.',
@@ -31,7 +32,7 @@ function Project() {
         'Google Custom Search API used to fetch an image related to the returned show.',
       ],
       icon: '📺',
-      link: 'https://anifinder.peternguyen.me/',
+      link: 'https://anifinder.peternguyen.tech/',
     },
   ];
 
@@ -59,7 +60,7 @@ function Project() {
             </div>
             <div className="flex flex-wrap gap-3 mb-4">
               {project.technologies.map((tech, i) => {
-                const techImages = { Kotlin, Swift, PostgreSQL, React, Docker, JavaScript, HTML, CSS };
+                const techImages = { Kotlin, Swift, PostgreSQL, React, Docker, JavaScript, HTML, CSS, SQL };
                 const image = techImages[tech];
                 return image ? (
                   <img
